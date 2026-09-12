@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Progress" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Progress Console</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark">PC</div>
+        <div><div class="brand-kicker">PERSONAL SYSTEM</div><div class="brand-name">Progress Console</div></div>
+      </div>
+      <nav id="sideNav" class="side-nav" aria-label="Primary navigation"></nav>
+      <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">EN</button>
+      <div id="sidebarFoot" class="sidebar-foot"><span class="status-dot"></span> Local-first · Offline ready</div>
+    </aside>
+    <main id="main" class="main-content"><div class="boot-screen">Loading…</div></main>
+    <button id="mobileFab" class="mobile-fab" aria-label="Quick log">＋</button>
+    <nav id="bottomNav" class="bottom-nav" aria-label="Mobile navigation"></nav>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
